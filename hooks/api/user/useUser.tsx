@@ -9,7 +9,10 @@ const find = () => {
 
   const resp = async () => {
     const resp = await dataBase.get<getUserI>('/api/users');
-    setUsers(resp.data.data);
+
+    const resUser: UserI[] = resp.data.data[0] as unknown as UserI[];
+
+    setUsers(resUser);
     setIsLoading(false);
   }
   useEffect(() => {

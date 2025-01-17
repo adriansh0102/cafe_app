@@ -1,4 +1,6 @@
 {
     "editor.fontSize": 17,
-    "editor.fontFamily": "'Cascadia Code'"
+    "editor.fontFamily": "'Cascadia Code'",
+    "editor.cursorStyle": "line",
+    "editor.overtypeCursorStyle": "line"
 }
